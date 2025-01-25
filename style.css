@@ -126,20 +126,22 @@ button {
 
 .projects-container {
     display: flex;
+    padding: 0px 40px;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.project {
+.project-box {
     border: 2px solid #3882f6;
     border-radius: 30px;
     overflow: hidden;
+    width: 50%;
     /* flex: 1 1 25%; */
 }
 
-.project img{
+.project-box img{
     display: block;
     width: 100%;
     height: auto;
