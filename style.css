@@ -106,10 +106,6 @@ button {
     border: 2px solid red;
     background-color: #EDE8DC;
     color: #1F2937;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 40px; */
-    /* align-items: center; */
 }
 
 #projects h2 {
@@ -121,20 +117,30 @@ button {
 }
 
 .projects-container {
+    border: 1px solid gold;
     display: flex;
-    padding: 0px 70px;
+    padding: 0px 100px;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 60px;
+    gap: 100px;
 }
 
 .project-box {
+    width: calc(50% - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* box that contains img */
+.img-box {
     border: 2px solid #3882f6;
     border-radius: 50px;
     overflow: hidden;
-    width: calc(50% - 30px);
+    width: 100%;
 }
 
+/* project images itself */
 .project-box img{
     display: block;
     width: 100%;
