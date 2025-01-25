@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid black ;   */
+    border: 1px solid black ;  
     margin: 0;
     padding: 0;
 }
@@ -34,7 +34,6 @@ body {
 
 /* ---header section--- */
 header {
-    /* background-color: #1F2937; */
     background-color: #A5B68D;
     border: 2px solid green;
     display: flex;
@@ -65,7 +64,6 @@ ul.nav-links {
 /* ---about section--- */
 #about {
     border: 2px solid pink;
-    /* background-color: #1F2937; */
     background-color: #C1CFA1;
     display: flex;
     align-items: center;
@@ -82,13 +80,11 @@ ul.nav-links {
 
 #description-container h1 {
     font-size: 48px;
-    /* color: #F9FAF8; */
     font-weight: 900;
 }
 
 #description-container p {
     font-size: 18px;
-    /* color: #E5E7EB; */
 }
 
 /* Resume button */
