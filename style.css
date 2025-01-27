@@ -5,10 +5,10 @@
     padding: 0;
 }
 
-/* .full-screen {
+.full-screen {
     width: 100vw;
     height: 100vh;
-} */
+}
 
 /* :root {
     --green: #91b0a0;
@@ -34,37 +34,62 @@ body {
 
 /* ---header section--- */
 header {
-    background-color: #A5B68D;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     border: 2px solid green;
+}
+
+.navbar {
+    border: 2px solid orange;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    padding: 20px 150px;
+    padding: 10px 100px;
 }
 
 .logo {
     font-size: 24px;
     /* color: #F9FAF8; */
 }
+.navbar-links {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
 
-ul.nav-links {
+.navbar-links a {
+    text-decoration: none;
+}
+
+
+/* .navbar {
+    position: absolute;
+} */
+
+/* ul.navbar {
     list-style-type: none; 
     display: flex;
     justify-content: center;
     gap: 80px;
 }
 
-.nav-links a {
+.navbar a {
     text-decoration: none;
     color:#1F2937;
     font-size: 18px;
-}
+} */
+
+
 
 /* ---about section--- */
 #about {
-    border: 2px solid pink;
-    background-color: #C1CFA1;
+    border: 2px solid purple;
+    background-color: #f3e6de;
     display: flex;
     align-items: center;
     padding: 70px 150px 100px;
@@ -95,6 +120,9 @@ button {
     color: #F9FAF8;
     font-weight: 800;
 }
+
+/* .img-container {
+} */
 
 .img-container img {
     display: block;
@@ -150,43 +178,53 @@ button {
 /* --- connect section --- */
 #contact {
     border: 2px solid purple;
+    width: 100%;
+    height: 55vh;
     background-color: #C1CFA1;
-    padding: 50px 0px;
+    padding: 35px 0px;
     color: #1F2937;
-
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #contact h2 {
-    margin-bottom: 40px;
+    justify-content: center;
     text-align: center;
     font-size: 36px;
     font-weight: 900;
-
 }
+
 .icon-container {
+    border: 1px solid plum;
+    width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
-    gap: 40px;
     align-items: center;
-
+    gap: 50px;
 }
 
 .high5gif {
+    border: 1px solid blue;
+    width: auto;
+    height: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .high5gif img {
     display: block;
-    width: 20%;
+    height: 100%;
+    width: auto;
 }
+
 
 .icon-container a {
     color: #1F2937;
 }
 
 .icon-container i {
-    font-size: 40px;
+    font-size: 25px;
 }
