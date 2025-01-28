@@ -17,7 +17,7 @@
     --off-white: #f9f8f5;
     --light-yellow: #ece3bc;
     --gray: #3f3d56;
-    --pink: #ec423f8a;
+    --primary: #333333;
     --darkpink: #ed2825d7;
     --yellow-green: rgb(192, 212, 136);
     --lightpink: #f9bdbcde;
@@ -30,7 +30,7 @@ html {
 
 body {
     font-family: Roboto, serif;
-    color: var(--pink);
+    color: var(--primary);
     /* color: #F9FAF8; */
 }
 
@@ -77,7 +77,7 @@ header {
 }
 
 .navbar-links a {
-    color: var(--pink);
+    color: var(--primary);
     text-decoration: none;
     font-size: 18px;
 }
