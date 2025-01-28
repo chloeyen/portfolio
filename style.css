@@ -35,7 +35,7 @@ body {
     /* color: #F9FAF8; */
 }
 
-/* ---header section--- */
+/* ---- HEADER ---- */
 header {
     position: absolute;
     width: 100%;
@@ -95,7 +95,7 @@ header {
     background-color: var(--active);
 }
 
-/* ---about section--- */
+/* ---- ABOUT ---- */
 #about {
     border: 2px solid purple;
     background-color: #f3e6de;
@@ -134,7 +134,7 @@ button {
     display: block;
 } 
 
-/* ---projects section---- */
+/* ---- PROJECTS ---- */
 #projects {
     padding: 40px 0px 120px;
     border: 2px solid red;
@@ -181,7 +181,7 @@ button {
     height: auto;
 }
 
-/* --- connect section --- */
+/* ---- CONNECT  ---- */
 #contact {
     border: 2px solid purple;
     width: 100%;
