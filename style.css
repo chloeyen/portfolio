@@ -10,17 +10,19 @@
     height: 100vh;
 }
 
-/* :root {
+:root {
+    --primary: #154360;
     --green: #91b0a0;
     --light-green: #a4cec0;
     --off-white: #f9f8f5;
     --light-yellow: #ece3bc;
     --gray: #3f3d56;
-    --pink: #f2a19f;
+    --pink: #ec423f8a;
+    /* --darkpink: #f214108a; */
     --yellow-green: rgb(192, 212, 136);
     --light-pink: #f0c7bc;
     --smooth: all .3s ease-in;
-} */
+}
 
 html {
     scroll-behavior: smooth;
@@ -28,7 +30,7 @@ html {
 
 body {
     font-family: Roboto, serif;
-    color: #1F2937;
+    color: var(--pink);
     /* color: #F9FAF8; */
 }
 
@@ -36,26 +38,38 @@ body {
 header {
     position: absolute;
     width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: center;
     border: 2px solid green;
+    padding: 10px 30px;
 }
 
 .navbar {
     border: 2px solid orange;
     max-width: 1200px;
+    min-width: 350px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 100px;
 }
 
 .logo {
     font-size: 24px;
     /* color: #F9FAF8; */
 }
+
+.logo img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
 .navbar-links {
     border: 1px solid white;
+    width: 40%;
+    min-width: 200px;
+    max-width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,27 +78,8 @@ header {
 
 .navbar-links a {
     text-decoration: none;
-}
-
-
-/* .navbar {
-    position: absolute;
-} */
-
-/* ul.navbar {
-    list-style-type: none; 
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color:#1F2937;
     font-size: 18px;
-} */
-
-
+}
 
 /* ---about section--- */
 #about {
@@ -133,7 +128,7 @@ button {
     padding: 40px 0px 120px;
     border: 2px solid red;
     background-color: #EDE8DC;
-    color: #1F2937;
+    /* color: #1F2937; */
 }
 
 #projects h2 {
@@ -141,7 +136,7 @@ button {
     font-size: 36px;
     text-align: center;
     font-weight: 900;
-    color: #1F2937;
+    /* color: #1F2937; */
 }
 
 .projects-container {
@@ -182,7 +177,6 @@ button {
     height: 55vh;
     background-color: #C1CFA1;
     padding: 35px 0px;
-    color: #1F2937;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -193,6 +187,7 @@ button {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
+    /* color: var(--darkpink); */
 }
 
 .icon-container {
@@ -220,10 +215,10 @@ button {
     width: auto;
 }
 
-
 .icon-container a {
     color: #1F2937;
 }
+
 
 .icon-container i {
     font-size: 25px;
