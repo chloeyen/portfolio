@@ -18,9 +18,9 @@
     --light-yellow: #ece3bc;
     --gray: #3f3d56;
     --pink: #ec423f8a;
-    /* --darkpink: #f214108a; */
+    --darkpink: #ed2825d7;
     --yellow-green: rgb(192, 212, 136);
-    --light-pink: #f0c7bc;
+    --lightpink: #f9bdbcde;
     --smooth: all .3s ease-in;
 }
 
@@ -77,9 +77,22 @@ header {
 }
 
 .navbar-links a {
+    color: var(--pink);
     text-decoration: none;
     font-size: 18px;
 }
+
+.navbar-links a:hover {
+    color: var(--darkpink);
+}
+
+.navbar-links a:active {
+    color: var(--lightpink);
+}
+
+/* .navbar-links a:visited {
+    color: var(--darkpink);
+} */
 
 /* ---about section--- */
 #about {
@@ -218,7 +231,6 @@ button {
 .icon-container a {
     color: #1F2937;
 }
-
 
 .icon-container i {
     font-size: 25px;
