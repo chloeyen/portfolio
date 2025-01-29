@@ -16,7 +16,7 @@
     --primary-text: #2C3E50;
     --active: #f6c2d4f0;
     --hover: #f4d0dca5;
-    --bg-dark-gray-hover: rgba(242, 242, 242, 0.5);
+    --bg-dark-gray-hover: rgba(242, 242, 242, 0.439);
     --bg-darker-gray-active: rgba(100, 100, 100, 0.8);
     --border-card: rgb(190 216 116);
     --contact-bg: #C1CFA1;
@@ -280,5 +280,5 @@ button {
 }
 
 .icon-container i:active {
-    color: var(--bg-darker-gray-active);
+    background-color: var(--bg-darker-gray-active);
 }
