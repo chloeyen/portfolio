@@ -20,13 +20,13 @@
     --bg-darker-gray-active: rgba(100, 100, 100, 0.8);
     --border-card: rgb(190 216 116);
     --contact-bg: #C1CFA1;
+
     --green: #91b0a0;
     /* --light-green: #a4cec0; */
-    --off-white: #f9f8f5;
     --light-yellow: #ece3bc;
-    --primary: #333333;
+    /* --primary: #333333; */
     --darkpink: #ec5f5dd7;
-    --yellow-green: rgb(192, 212, 136);
+    /* --yellow-green: rgb(192, 212, 136); */
     --lightpink: #f9bdbcde;
     --smooth: all .3s ease-in;
 }
@@ -162,7 +162,7 @@ button {
 #projects {
     padding: 40px 0px 120px;
     /* border: 2px solid red; */
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
 }
 
 #projects h2 {
@@ -204,17 +204,17 @@ button {
 }
 
 /* ---- WORK EXPERIENCE ---- */
-#work-experience {
+#skills {
     padding: 40px 0px 100px;
-    background-color: var(--secondary-bg);
+    background-color: var(--primary-bg);
 }
 
-.work-container {
+.skill-container {
     height: 70vh;
     padding: 0px 100px;
 }
 
-.work-container h2 {
+.skill-container h2 {
     font-size: 36px;
     font-weight: 900;
     text-align: center;
