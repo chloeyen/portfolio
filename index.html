@@ -10,40 +10,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/3cc1aeebc1.js" crossorigin="anonymous"></script>
-    <title>Chloe Ngo's Webpage</title>
+    <title>Chloe Ngo's Portfolio</title>
 </head>
 <body>
-    <header>
+    <!-- ---- Home ---- -->
+    <header id="home">
         <div class="navbar">
-            <ul class="navbar-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>  
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <h1>Hey there!</h1>
+                <p>I'm <span>Chloe Ngo</span></p>
+                <p>I'm a 2nd-year student at Toronto Metropolitan Universiy majoring in Computer Science (Co-op). </p>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="full-screen">
-        <div class="about-container">
-            <div id="description-container">
-                <h1>Hey there!</h1>
-                <p>I'm Chloe Ngo. I'm a 2nd-year student at Toronto Metropolitan Universiy majoring in Computer Science (Co-op). </p>
-                <p>I have a passion for software development and love exploring new technologies to build innovative solutions.</p>
-                <div class="button"><button>Resume</button></div>
-            </div>
-            <div class="img-container">
-                <img src="./img/IMG_3059.JPG" alt="an image of Chloe maybe?">
+    <!-- ---- About ---- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/IMG_3059.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I have a passion for software development and love exploring new technologies to build innovative solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Skill1</span><br>something here</li>
+                            <li><span>Skill2</span><br>something here</li>
+                            <li><span>Skill3</span><br>something here</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>Skill1</span><br>something here</li>
+                            <li><span>Skill2</span><br>something here</li>
+                            <li><span>Skill3</span><br>something here</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>Skill1</span><br>something here</li>
+                            <li><span>Skill2</span><br>something here</li>
+                            <li><span>Skill3</span><br>something here</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="skill-container">
-            <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur quod autem id, iste molestiae adipisci culpa cum corrupti natus fuga exercitationem tempore aliquid deleniti reprehenderit temporibus. Expedita repellat est praesentium obcaecati odit quae delectus itaque corrupti vitae. Reprehenderit error saepe velit eos harum officia ut illum debitis id atque. Placeat soluta maiores quae inventore accusantium, non aspernatur optio atque a voluptas illo sequi, nam voluptatem rerum! Debitis doloremque beatae harum illum minus quia libero quos eius dolores nihil aut quo, necessitatibus impedit numquam inventore cumque deleniti. Odit, eaque mollitia suscipit laudantium, nesciunt soluta nemo unde sunt necessitatibus nihil quam?</p>
-        </div>
-    </section>
-
+    <!-- ---- Projects ---- -->
     <section id="projects">
         <h2>My Projects</h2>
         <!-- prj-container will be a flexbox and 4 divs will be flex items -->
@@ -70,6 +102,7 @@
         </div>
     </section>
 
+    <!-- ---- Contact ---- -->
     <section id="contact">
         <h2>Let's Connect!</h2>
         <div class="high5gif">
@@ -82,5 +115,25 @@
         </div>
     </section>
 
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            // remove active-link class on all tablink
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            // remove active-tab class on all tab-contents
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            // add active-link class to the tab that got clicked on
+            event.currentTarget.classList.add("active-link");
+            // add active-tab class to the tab that got clicked on
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>
