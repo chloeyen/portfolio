@@ -10,47 +10,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/3cc1aeebc1.js" crossorigin="anonymous"></script>
-    <title>Chloe Ngo</title>
+    <title>Chloe Ngo's Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="" alt="logo">
+    <!-- ---- Home ---- -->
+    <header id="home">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>  
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-text">
+                <h1>Hey there!</h1>
+                <p>I'm <span>Chloe Ngo</span></p>
+                <p>I'm a 2nd-year student at Toronto Metropolitan Universiy majoring in Computer Science (Co-op). </p>
+            </div>
+        </div>
     </header>
 
+    <!-- ---- About ---- -->
     <section id="about">
-        <div id="description-container">
-            <h1>Hey there!</h1>
-            <p>I'm Chloe Ngo. I'm a 2nd-year student at Toronto Metropolitan Universiy majoring in Computer Science.
-                have a passion for software development and love exploring new technologies to build innovative solutions.</p>
-            <button>Resume</button>
-        </div>
-        <div class="img-container">
-            <img src="./img/IMG_3059.JPG" alt="an image of Chloe maybe?">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/IMG_3059.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I have a passion for software development and love exploring new technologies to build innovative solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Skill1</span><br>something here</li>
+                            <li><span>Skill2</span><br>something here</li>
+                            <li><span>Skill3</span><br>something here</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>Skill1</span><br>something here</li>
+                            <li><span>Skill2</span><br>something here</li>
+                            <li><span>Skill3</span><br>something here</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>Skill1</span><br>something here</li>
+                            <li><span>Skill2</span><br>something here</li>
+                            <li><span>Skill3</span><br>something here</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- ---- Projects ---- -->
     <section id="projects">
-        <h2>Some of my projects</h2>
+        <h2>My Projects</h2>
         <!-- prj-container will be a flexbox and 4 divs will be flex items -->
         <div class="projects-container"> 
-            <div class="project-box"><img src="img/cat1.jpeg" alt="project1"></div>
-            <div class="project-box"><img src="img/cat2.jpeg" alt="project2"></div>
-            <div class="project-box"><img src="img/cat3.jpeg" alt="project3"></div>
-            <div class="project-box"><img src="img/cat4.jpeg" alt="project4"></div>
+            <div class="project-box">
+                <div class="img-box"><img src="img/cat1.jpeg" alt="project1"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rerum esse aspernatur ad. Doloremque excepturi dolores omnis esse aut quod inventore amet, porro unde eius provident soluta libero temporibus eligendi?</p>
+            </div>
+
+            <div class="project-box">
+                <div class="img-box"><img src="img/cat2.jpeg" alt="project1"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rerum esse aspernatur ad. Doloremque excepturi dolores omnis esse aut quod inventore amet, porro unde eius provident soluta libero temporibus eligendi?</p>
+            </div>
+
+            <div class="project-box">
+                <div class="img-box"><img src="img/cat3.jpeg" alt="project1"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rerum esse aspernatur ad. Doloremque excepturi dolores omnis esse aut quod inventore amet, porro unde eius provident soluta libero temporibus eligendi?</p>
+            </div>
+
+            <div class="project-box">
+                <div class="img-box"><img src="img/cat4.jpeg" alt="project1"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum rerum esse aspernatur ad. Doloremque excepturi dolores omnis esse aut quod inventore amet, porro unde eius provident soluta libero temporibus eligendi?</p>
+            </div>
         </div>
     </section>
 
+    <!-- ---- Contact ---- -->
     <section id="contact">
-        <h2>Let's connect!</h2>
+        <h2>Let's Connect!</h2>
         <div class="high5gif">
             <img src="./img/highfiveGIF" alt="high five gif">
         </div>
@@ -61,5 +115,25 @@
         </div>
     </section>
 
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            // remove active-link class on all tablink
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            // remove active-tab class on all tab-contents
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            // add active-link class to the tab that got clicked on
+            event.currentTarget.classList.add("active-link");
+            // add active-tab class to the tab that got clicked on
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>
