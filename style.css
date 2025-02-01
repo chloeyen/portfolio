@@ -148,7 +148,7 @@ nav ul li a:hover::after{
 .tab-titles {
     /* border: 1px solid purple; */
     display: flex;
-    padding: 20px 0px 40px;
+    padding: 20px 0px 30px;
 }
 
 .tab-links {
@@ -180,11 +180,13 @@ nav ul li a:hover::after{
 
 .tab-contents ul li {
     list-style: none;
-    margin: 10px 0;
+    margin: 10px 0 15px;
 }
 
 .tab-contents ul li span {
+    display: inline-block;
     color: var(--darkpink);
+    margin-bottom: 5px;
     /* font-size: 14px; */
 }
 
