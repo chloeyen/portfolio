@@ -295,44 +295,6 @@ nav ul li a:hover::after{
     font-size: 17px;
 }
 
-
-/* 
-#projects h2 {
-    margin-bottom: 50px;
-    font-size: 36px;
-    text-align: center;
-    font-weight: 900;
-}
-
-.projects-container {
-    border: 1px solid gold;
-    display: flex;
-    padding: 0px 100px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 100px;
-}
-
-.project-box {
-    width: calc(50% - 50px);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.img-box {
-    border: 5px solid var(--border-card);
-    border-radius: 50px;
-    overflow: hidden;
-    width: 100%;
-}
-
-.project-box img{
-    display: block;
-    width: 100%;
-    height: auto;
-} */
-
 /* ---- CONTACT  ---- */
 #contact {
     /* border: 2px solid purple; */
