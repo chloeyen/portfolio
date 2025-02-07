@@ -227,11 +227,76 @@ nav ul li a:hover::after{
 /* ---- PROJECTS ---- */
 #projects {
     scroll-margin-top: 10vh;
-    padding: 40px 0px 120px;
+    padding: 50px 0px;
     /* border: 2px solid red; */
     background-color: var(--secondary-bg);
 }
 
+.projects .sub-title {
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.project img {
+    border-radius: 30px;
+    width: 100%;
+    display: block;
+    border: 5px solid var(--border-card);
+    transition: transform 0.5s;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #017e78, #f5cbce9e);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* 
 #projects h2 {
     margin-bottom: 50px;
     font-size: 36px;
@@ -240,7 +305,7 @@ nav ul li a:hover::after{
 }
 
 .projects-container {
-    /* border: 1px solid gold; */
+    border: 1px solid gold;
     display: flex;
     padding: 0px 100px;
     flex-wrap: wrap;
@@ -255,7 +320,6 @@ nav ul li a:hover::after{
     gap: 20px;
 }
 
-/* box that contains img */
 .img-box {
     border: 5px solid var(--border-card);
     border-radius: 50px;
@@ -263,12 +327,11 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-/* project images itself */
 .project-box img{
     display: block;
     width: 100%;
     height: auto;
-}
+} */
 
 /* ---- CONTACT  ---- */
 #contact {
