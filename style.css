@@ -307,10 +307,10 @@ nav ul li a:hover::after{
     gap: 10px;
 }
 
-#contact h2 {
+#contact h3 {
     justify-content: center;
     text-align: center;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 900;
 }
 
