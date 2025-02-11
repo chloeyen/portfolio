@@ -17,19 +17,21 @@
     <header id="home">
         <div class="navbar">
             <nav>
-                <ul>
+                <ul id="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>  
         </div>
         <div class="container">
             <div class="header-text">
                 <h1>Hey there!</h1>
-                <p>I'm <span>Chloe Ngo</span></p>
-                <p>a 2nd-year Computer Science (Co-op) student at Toronto Metropolitan University. </p>
+                <p>I'm <span>Chloe Ngo</span> :)</p>
+                <p>a 2nd-year Computer Science (Co-op) student at Toronto Metropolitan University</p>
             </div>
         </div>
     </header>
@@ -43,7 +45,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I have a passion for software development and love exploring new technologies to build innovative solutions.</p>
+                    <p>I have a passion for software development and love exploring new technologies to build innovative solutions</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
                         <p class="tab-links" onclick="openTab('education')">Education</p>
@@ -111,14 +113,16 @@
 
     <!-- ---- Contact ---- -->
     <section id="contact">
-        <h3>Let's Connect!</h3>
-        <div class="high5gif">
-            <img src="./img/highfiveGIF" alt="high five gif">
-        </div>
-        <div class="icon-container">
-            <a href="https://github.com/chloeyen" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ngochloe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/chlhyen/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <div class="container">
+            <h3>Let's Connect!</h3>
+            <div class="high5gif">
+                <img src="./img/highfiveGIF" alt="high five gif">
+            </div>
+            <div class="icon-container">
+                <a href="https://github.com/chloeyen" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ngochloe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/chlhyen/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </section>
 
@@ -139,6 +143,15 @@
             event.currentTarget.classList.add("active-link");
             // add active-tab class to the tab that got clicked on
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        let menu = document.getElementById("menu");
+        function openmenu() {
+            menu.style.right = "0";
+        }
+
+        function closemenu() {
+            menu.style.right = "-200px";
         }
 
     </script>
