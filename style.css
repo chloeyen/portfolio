@@ -136,6 +136,7 @@ nav ul li a:hover::after{
 
 .about-col-2 {
     width: 60%;
+    min-height: 442px;
 }
 
 .sub-title {
@@ -415,6 +416,7 @@ nav .fa-solid {
 
     .about-col-2 {
         font-size: 14px;
+        min-height: 390px;
     }
 
     .about-col-2 .sub-title {
