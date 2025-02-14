@@ -19,7 +19,6 @@
     /* --contact-bg: #C1CFA1; */
     --contact-bg: rgba(192, 212, 136, 0.722);
     --about-bg: #c1cfa193;
-    --green: #91b0a0;
     /* --light-green: #a4cec0; */
     --light-yellow: #ece3bc;
     --darkpink: #ec5f5dd7;
@@ -117,6 +116,7 @@ nav ul li a:hover::after{
     scroll-margin-top: 10vh;
     background-color: var(--about-bg);
     padding: 80px 0px;
+    padding: 70px 0px;
 }
 
 .row {
@@ -206,19 +206,6 @@ nav ul li a:hover::after{
     color: #F9FAF8;
     font-weight: 500;
 } */
-/* 
-.img-container {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-}
-
-.img-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}  */
 
 /* ---- PROJECTS ---- */
 #projects {
