@@ -114,8 +114,8 @@ nav ul li a:hover::after{
 /* ---- ABOUT ---- */
 #about {
     scroll-margin-top: 10vh;
-    background-color: var(--about-bg);
-    padding: 80px 0px;
+    background-color: var(--secondary-bg);
+    /* ebdadf */
     padding: 70px 0px;
 }
 
